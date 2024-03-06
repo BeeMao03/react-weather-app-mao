@@ -10,19 +10,24 @@ export default function App() {
           <Weather />
           <footer>
             Open-source code built by{" "}
-            <a href="https://github.com/BeeMao03" target="_blank">
+            <a
+              href="https://github.com/BeeMao03"
+              target="_blank"
+              rel="noreferrer">
               Mariel Buzarquis
             </a>
             , available on{" "}
             <a
               href="https://github.com/BeeMao03/react-weather-app-mao"
-              target="_blank">
+              target="_blank"
+              rel="noreferrer">
               GitHub
             </a>{" "}
             and hosted on{" "}
             <a
               href="https://weather-app-react-mao.netlify.app/"
-              target="_blank">
+              target="_blank"
+              rel="noreferrer">
               Netlify
             </a>
           </footer>
