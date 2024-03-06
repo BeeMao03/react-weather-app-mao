@@ -74,6 +74,17 @@ ul li {
   top: -42px;
 }
 
+.highlowtemp {
+  text-align: center;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+
 footer {
   text-align: center;
   font-size: 15px;
@@ -87,4 +98,8 @@ footer a {
 
 footer a:hover {
   color: #49beb7;
+}
+
+p {
+  text-align: center;
 }
