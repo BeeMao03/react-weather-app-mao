@@ -106,3 +106,8 @@ footer a:hover {
 p {
   text-align: center;
 }
+
+.info {
+  color: #ff7eb9;
+  font-weight: 600;
+}

@@ -16,7 +16,7 @@ export default function WeatherInfo(props) {
       <div className="row">
         <div className="col-6">
           <div className="clearfix">
-            <WeatherIcon code={props.data.icon} />
+            <WeatherIcon code={props.data.icon} size={150} />
             <WeatherTemperature
               celsius={props.data.temperature}
               celsiusMax={props.data.highTemp}
@@ -26,8 +26,12 @@ export default function WeatherInfo(props) {
         </div>
         <div className="col-6">
           <ul>
-            <li>Humidity: {props.data.humidity}%</li>
-            <li>Wind: {props.data.wind} km/h</li>
+            <li>
+              Humidity: <span className="info">{props.data.humidity} %</span>
+            </li>
+            <li>
+              Wind: <span className="info">{props.data.wind} km/h</span>
+            </li>
           </ul>
         </div>
       </div>

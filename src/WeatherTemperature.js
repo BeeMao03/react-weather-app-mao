@@ -19,14 +19,15 @@ export default function WeatherTemperature(props) {
       <span>
         <span className="temperature">{Math.round(props.celsius)}</span>{" "}
         <span className="unit">
-          °C <span className="bar">|</span>{" "}
+          <strong> °C </strong>
+          <span className="bar">|</span>{" "}
           <a href="/" onClick={convertFarenheit}>
             °F
           </a>{" "}
         </span>
         <div className="highlowtemp">
-          H: <strong>{Math.round(props.celsiusMax)}</strong> | L:{" "}
-          <strong>{Math.round(props.celsiusMin)}</strong>{" "}
+          H: <strong className="temp">{Math.round(props.celsiusMax)}°</strong> |
+          L: <strong className="temp">{Math.round(props.celsiusMin)}°</strong>{" "}
         </div>
       </span>
     );
@@ -41,11 +42,11 @@ export default function WeatherTemperature(props) {
           <a href="/" onClick={convertCelsius}>
             °C
           </a>{" "}
-          <span className="bar">|</span> °F{" "}
+          <span className="bar">|</span> <strong>°F </strong>{" "}
         </span>
         <div className="highlowtemp">
-          H: <strong>{Math.round(farenheitMax)}</strong> | L:{" "}
-          <strong>{Math.round(farenheitMin)}</strong>{" "}
+          H: <strong className="temp">{Math.round(farenheitMax)}°</strong> | L:{" "}
+          <strong className="temp">{Math.round(farenheitMin)}°</strong>{" "}
         </div>
       </span>
     );
