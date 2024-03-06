@@ -18,7 +18,6 @@ export default function Weather(props) {
       temperature: response.data.main.temp,
       highTemp: response.data.main.temp_max,
       lowTemp: response.data.main.temp_min,
-      feelsLikeTemp: response.data.main.feels_like,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
     });
