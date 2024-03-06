@@ -1,0 +1,90 @@
+.Weather {
+  background-color: #e8f5f2;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 60px 20px 20px 20px;
+  max-width: 600px;
+  color: #868585;
+  box-shadow: 10px 10px 9px rgba(255, 183, 215, 0.6);
+}
+
+.form-control {
+  padding: 10px;
+  border: 2px solid #ff7eb9;
+  border-radius: 5px;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.btn-search {
+  background-color: #49beb7;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+.btn-search:hover {
+  background-color: #ff7eb9;
+  color: white;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 20px;
+  color: #ff7eb9;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 18px;
+}
+
+.col-6 ul {
+  margin-top: 15px;
+}
+
+.col-6 ul li {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+/* Customizing the icon */
+.icon {
+  height: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+  top: -20px;
+}
+
+.temperature {
+  font-weight: 400;
+  font-size: 70px;
+  color: #363636;
+}
+
+.unit {
+  position: relative;
+  top: -42px;
+}
+
+footer {
+  text-align: center;
+  font-size: 15px;
+  color: #525252;
+}
+
+footer a {
+  color: #ff7eb9;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #49beb7;
+}
