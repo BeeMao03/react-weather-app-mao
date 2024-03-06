@@ -52,7 +52,7 @@ ul li {
 }
 
 .col-6 ul {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 .col-6 ul li {
@@ -74,11 +74,8 @@ canvas {
 
 .unit {
   position: relative;
-  top: -42px;
-}
-
-.highlowtemp {
-  text-align: center;
+  font-size: 25px;
+  top: -35px;
 }
 
 .loader-container {
