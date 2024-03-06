@@ -46,37 +46,39 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <h1>{weatherData.city}</h1>
-        <ul>
-          <li>
-            {weatherData.date},{" "}
-            <span className="text-capitalize">{weatherData.description}</span>
-          </li>
-        </ul>
-        <div className="row">
-          <div className="col-6">
-            <div className="clearfix">
-              <img
-                src={weatherData.iconUrl}
-                alt={weatherData.description}
-                className="icon"
-              />
-              <span className="temperature">
-                {Math.round(weatherData.temperature)}
-              </span>{" "}
-              <span className="unit">°C</span>
+        <div className="weatherParameters">
+          <h1>{weatherData.city}</h1>
+          <ul>
+            <li>
+              {weatherData.date},{" "}
+              <span className="text-capitalize">{weatherData.description}</span>
+            </li>
+          </ul>
+          <div className="row">
+            <div className="col-6">
+              <div className="clearfix">
+                <img
+                  src={weatherData.iconUrl}
+                  alt={weatherData.description}
+                  className="icon"
+                />
+                <span className="temperature">
+                  {Math.round(weatherData.temperature)}
+                </span>{" "}
+                <span className="unit">°C</span>
+              </div>
+              <div className="highlowtemp">
+                H: <strong>{Math.round(weatherData.highTemp)}</strong> | L:{" "}
+                <strong>{Math.round(weatherData.lowTemp)}</strong>{" "}
+              </div>
             </div>
-            <div className="highlowtemp">
-              H: <strong>{Math.round(weatherData.highTemp)}</strong> | L:{" "}
-              <strong>{Math.round(weatherData.lowTemp)}</strong>{" "}
+            <div className="col-6">
+              <ul>
+                <li>Feels like: {Math.round(weatherData.feelsLikeTemp)}°C</li>
+                <li>Humidity: {weatherData.humidity}%</li>
+                <li>Wind: {weatherData.wind} km/h</li>
+              </ul>
             </div>
-          </div>
-          <div className="col-6">
-            <ul>
-              <li>Feels like: {Math.round(weatherData.feelsLikeTemp)}°C</li>
-              <li>Humidity: {weatherData.humidity}%</li>
-              <li>Wind: {weatherData.wind} km/h</li>
-            </ul>
           </div>
         </div>
       </div>
