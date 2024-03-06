@@ -1,5 +1,5 @@
 .Weather {
-  background-color: #e8f5f2;
+  background-color: #ffffff;
   border-radius: 5px;
   padding: 30px;
   margin: 60px 20px 20px 20px;
@@ -60,12 +60,10 @@ ul li {
 }
 
 /* Customizing the icon */
-.icon {
+canvas {
   height: 50px;
-  margin-right: 10px;
-  margin-left: 10px;
-  position: relative;
-  top: -20px;
+  margin-right: 3px;
+  margin-left: 7px;
 }
 
 .temperature {
